@@ -8,6 +8,7 @@ int main(){
   printf("What would you like to do? ");
   fgets(input, sizeof(input), stdin);
   input[strlen(input) - 1] = 0;
+  // *(strchr(line, '\n')) = NULL;
 
   char *temp = input;
   char *argv[256];
